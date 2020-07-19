@@ -10,13 +10,12 @@ import Foundation
 import AVFoundation
 
 class AudioRecorderService: NSObject, AVAudioPlayerDelegate, AVAudioRecorderDelegate {
-    var soundRecorder: AVAudioRecorder = AVAudioRecorder()
+    var soundRecorder: AVAudioRecorder!
     var soundPlayer: AVAudioPlayer = AVAudioPlayer()
     var audioSession: AVAudioSession = AVAudioSession()
     var audioEngine: AVAudioEngine = AVAudioEngine()
     var mixer: AVAudioMixerNode = AVAudioMixerNode()
-    var audioFiles: Array<String>?
-    var fileName = "\(UUID()).m4a"
+    var fileName = "101.m4a"
     var isRecording = false
     
     override init() {
