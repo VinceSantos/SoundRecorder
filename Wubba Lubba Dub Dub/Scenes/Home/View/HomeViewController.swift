@@ -34,10 +34,12 @@ class HomeViewController: UIViewController, HomeViewInput {
         tableView.register(UINib(nibName: String(describing: UserPostTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: UserPostTableViewCell.self))
     }
     
-    @objc func recordStart() {
+    @objc func recordStart(button: UIButton) {
         if recorderService.isRecording {
+            button.setImage(UIImage(named: "Record"), for: .normal)
             recorderService.stopRecording()
         } else {
+            button.setImage(UIImage(named: "recording"), for: .normal)
             recorderService.startRecording()
         }
     }
