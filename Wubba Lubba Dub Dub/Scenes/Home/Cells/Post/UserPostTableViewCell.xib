@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="195" id="KGk-i7-Jjw" customClass="UserPostTableViewCell" customModule="Wubba_Lubba_Dub_Dub" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="195"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="194.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vNG-uN-Uwq" customClass="UIViewDesignable" customModule="Wubba_Lubba_Dub_Dub" customModuleProvider="target">
+                        <rect key="frame" x="16" y="16" width="288" height="162.5"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aWO-5m-5Sg">
+                                <rect key="frame" x="0.0" y="98.5" width="288" height="64"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="pxy-Qw-qIf">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="64"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zz9-rw-ncm">
+                                                <rect key="frame" x="0.0" y="0.0" width="96" height="64"/>
+                                                <state key="normal" image="Record"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ecN-xx-HtD">
+                                                <rect key="frame" x="96" y="0.0" width="96" height="64"/>
+                                                <state key="normal" image="Overdub"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xQ7-N9-lSx">
+                                                <rect key="frame" x="192" y="0.0" width="96" height="64"/>
+                                                <state key="normal" image="Play"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.63137254901960782" green="0.74901960784313726" blue="0.80784313725490198" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="pxy-Qw-qIf" secondAttribute="trailing" id="0Bi-np-PI5"/>
+                                    <constraint firstItem="pxy-Qw-qIf" firstAttribute="top" secondItem="aWO-5m-5Sg" secondAttribute="top" id="9Zi-Le-Lab"/>
+                                    <constraint firstAttribute="height" constant="64" id="Chk-V4-WmL"/>
+                                    <constraint firstItem="pxy-Qw-qIf" firstAttribute="leading" secondItem="aWO-5m-5Sg" secondAttribute="leading" id="VF5-3e-7Dy"/>
+                                    <constraint firstAttribute="bottom" secondItem="pxy-Qw-qIf" secondAttribute="bottom" id="buf-Cw-Buu"/>
+                                </constraints>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="0qW-l9-yss">
+                                <rect key="frame" x="16" y="16" width="256" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="GQZ-Oq-CUj"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96862745098039216" green="0.97254901960784312" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="0qW-l9-yss" secondAttribute="trailing" constant="16" id="4HB-Zm-G3c"/>
+                            <constraint firstItem="0qW-l9-yss" firstAttribute="leading" secondItem="vNG-uN-Uwq" secondAttribute="leading" constant="16" id="AdN-ji-Cdr"/>
+                            <constraint firstAttribute="bottom" secondItem="aWO-5m-5Sg" secondAttribute="bottom" id="Jce-3A-zj4"/>
+                            <constraint firstAttribute="height" constant="162.5" id="Lwc-NT-TEs"/>
+                            <constraint firstAttribute="trailing" secondItem="aWO-5m-5Sg" secondAttribute="trailing" id="Txr-D0-Nfy"/>
+                            <constraint firstItem="aWO-5m-5Sg" firstAttribute="top" relation="lessThanOrEqual" secondItem="0qW-l9-yss" secondAttribute="bottom" constant="38.5" id="UpP-HW-qfF"/>
+                            <constraint firstItem="aWO-5m-5Sg" firstAttribute="leading" secondItem="vNG-uN-Uwq" secondAttribute="leading" id="kjc-AP-XnU"/>
+                            <constraint firstItem="0qW-l9-yss" firstAttribute="top" secondItem="vNG-uN-Uwq" secondAttribute="top" constant="16" id="qiJ-bX-chA"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="12"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="vNG-uN-Uwq" secondAttribute="trailing" constant="16" id="Kgy-J7-lY9"/>
+                    <constraint firstAttribute="bottom" secondItem="vNG-uN-Uwq" secondAttribute="bottom" constant="16" id="Mce-q2-bM5"/>
+                    <constraint firstAttribute="top" secondItem="vNG-uN-Uwq" secondAttribute="top" constant="-16" id="bAv-sn-usK"/>
+                    <constraint firstItem="vNG-uN-Uwq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="bin-NH-Gbs"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="overdubBtn" destination="ecN-xx-HtD" id="0YZ-zD-kpS"/>
+                <outlet property="playBtn" destination="xQ7-N9-lSx" id="QVy-QX-MWH"/>
+                <outlet property="recordBtn" destination="Zz9-rw-ncm" id="Plq-Oq-kTM"/>
+            </connections>
+            <point key="canvasLocation" x="132.80000000000001" y="206.44677661169416"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="Overdub" width="50" height="50"/>
+        <image name="Play" width="50" height="50"/>
+        <image name="Record" width="50" height="50"/>
+    </resources>
+</document>
